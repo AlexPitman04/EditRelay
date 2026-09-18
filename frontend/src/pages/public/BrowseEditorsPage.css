@@ -1,0 +1,53 @@
+.editors {
+  gap: 18px;
+  background: none;
+}
+.editor-card {
+  position: relative;
+  min-height: 296px;
+  padding: 20px;
+  border: 1px solid #ded9d4;
+}
+.avatar {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  background: #e4c5a9;
+  color: #5e3b30;
+  font:
+    24px "Playfair Display",
+    serif;
+}
+.editor-card:nth-child(2) .avatar {
+  background: #e1b9ba;
+}
+.editor-card:nth-child(3) .avatar {
+  background: #a5c8bf;
+}
+.online {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #50986a;
+  font-size: 10px;
+}
+.editor-card h2 {
+  margin: 35px 0 3px;
+  color: #211d1f;
+  font-size: 23px;
+}
+.editor-card p {
+  color: #696266;
+  font-size: 14px;
+}
+.editor-card button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: 0;
+  background: none;
+  color: #e1563d;
+  font-size: 13px;
+  font-weight: 600;
+}

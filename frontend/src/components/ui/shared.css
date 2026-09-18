@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.button:hover {
+  transform: translateY(-2px);
+}
+.primary {
+  color: #fff;
+  background: #201d1f;
+}
+.primary:hover {
+  background: #e85940;
+}
+.quiet {
+  border-color: #dcd6d1;
+  background: #fff;
+}
+.eyebrow {
+  margin: 0;
+  color: #e75a40;
+  font:
+    11px "DM Mono",
+    monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.intro {
+  max-width: 520px;
+  color: #6c6568;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.text-link {
+  font-size: 14px;
+  font-weight: 600;
+}
+.text-link:hover {
+  color: #e7543b;
+}

@@ -1,0 +1,89 @@
+.auth {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  min-height: calc(100vh - 88px);
+}
+.auth-aside {
+  padding: 115px max(32px, calc((100vw - 1200px) / 2));
+  padding-right: 8vw;
+  background: #252124;
+  color: #d2c9c5;
+}
+.auth-aside h1 {
+  margin: 17px 0 20px;
+  color: #fff9f2;
+  font:
+    700 clamp(45px, 5vw, 67px) / 1.04 "Playfair Display",
+    serif;
+  letter-spacing: -0.05em;
+}
+.auth-aside > p:last-child {
+  max-width: 400px;
+  line-height: 1.6;
+}
+.auth-card {
+  width: min(420px, calc(100% - 64px));
+  align-self: center;
+  justify-self: center;
+}
+.auth-card h2 {
+  margin: 0 0 30px;
+  color: #211d1f;
+  font-size: 28px;
+}
+.auth-card form {
+  display: grid;
+  gap: 19px;
+}
+.auth-card label {
+  display: grid;
+  gap: 8px;
+  color: #373235;
+  font-size: 13px;
+  font-weight: 600;
+}
+.auth-card input {
+  height: 48px;
+  padding: 0 13px;
+  border: 1px solid #d8d2cd;
+  background: #fff;
+  outline-color: #e75a40;
+  font-size: 14px;
+  font-weight: 400;
+}
+.auth-card form .button {
+  width: 100%;
+  margin-top: 5px;
+}
+.auth-card > p {
+  text-align: center;
+  color: #716a6e;
+  font-size: 13px;
+}
+.auth-card > p a {
+  color: #e14f35;
+  font-weight: 600;
+}
+.check {
+  display: flex !important;
+  align-items: center;
+  gap: 9px !important;
+  color: #716a6e !important;
+  font-weight: 400 !important;
+}
+.check input {
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 720px) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+  .auth-aside {
+    padding: 60px 20px;
+  }
+  .auth-card {
+    width: calc(100% - 40px);
+    padding: 50px 0;
+  }
+}

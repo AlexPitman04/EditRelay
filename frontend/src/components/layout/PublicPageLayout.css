@@ -1,0 +1,19 @@
+.public-page {
+  width: min(1040px, calc(100% - 64px));
+  margin: 84px auto;
+}
+.public-page h1 {
+  max-width: 800px;
+  margin: 17px 0 20px;
+  color: #1d191b;
+  font:
+    700 clamp(43px, 5vw, 68px) / 1.04 "Playfair Display",
+    serif;
+  letter-spacing: -0.05em;
+}
+@media (max-width: 720px) {
+  .public-page {
+    width: calc(100% - 40px);
+    margin: 55px auto;
+  }
+}

@@ -1,0 +1,78 @@
+.choice {
+  min-height: 100vh;
+  background: #fbfaf8;
+}
+.choice > section {
+  width: min(880px, calc(100% - 64px));
+  margin: 85px auto;
+  text-align: center;
+}
+.choice h1 {
+  margin: 17px 0 20px;
+  color: #1d191b;
+  font:
+    700 56px/1.04 "Playfair Display",
+    serif;
+  letter-spacing: -0.05em;
+}
+.choice .intro {
+  margin: auto;
+}
+.choice .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 44px;
+  text-align: left;
+}
+.choice-card {
+  min-height: 258px;
+  padding: 27px;
+  border: 1px solid #ded9d4;
+  background: #fff;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+.choice-card:hover {
+  border-color: #e75a40;
+  transform: translateY(-4px);
+}
+.choice-card > i {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  background: #ffe0d2;
+  color: #dc543c;
+  font-size: 22px;
+  font-style: normal;
+}
+.choice-card h2 {
+  margin: 27px 0 8px;
+  color: #211d1f;
+  font-size: 23px;
+}
+.choice-card p {
+  color: #696266;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.choice-card b {
+  display: block;
+  margin-top: 24px;
+  color: #e1563d;
+  font-size: 13px;
+}
+@media (max-width: 720px) {
+  .choice > section {
+    width: calc(100% - 40px);
+    margin: 55px auto;
+  }
+  .choice h1 {
+    font-size: 43px;
+  }
+  .choice .cards {
+    grid-template-columns: 1fr;
+  }
+}

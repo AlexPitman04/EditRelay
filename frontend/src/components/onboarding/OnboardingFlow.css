@@ -1,0 +1,142 @@
+.onboarding {
+  min-height: 100vh;
+  background: #fbfaf8;
+}
+.setup-header {
+  width: 100%;
+  padding: 0 max(32px, calc((100vw - 1200px) / 2));
+  border-bottom: 1px solid #e4ded9;
+  color: #70696c;
+  font-size: 13px;
+}
+.setup-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  width: min(1200px, 100%);
+  margin: auto;
+}
+.setup-layout aside {
+  min-height: calc(100vh - 88px);
+  padding: 52px 28px;
+  border-right: 1px solid #e4ded9;
+}
+.setup-layout aside div {
+  display: flex;
+  gap: 12px;
+  min-height: 51px;
+  color: #aaa3a3;
+  font-size: 13px;
+}
+.setup-layout aside i {
+  display: grid;
+  flex: 0 0 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid #d2ccca;
+  border-radius: 50%;
+  font:
+    11px "DM Mono",
+    monospace;
+  font-style: normal;
+}
+.setup-layout aside .active {
+  color: #292527;
+}
+.setup-layout aside .active i {
+  border-color: #e75a40;
+  color: #e75a40;
+}
+.setup-layout aside .complete {
+  color: #6b966f;
+}
+.setup-layout aside .complete i {
+  border-color: #6b966f;
+  background: #6b966f;
+  color: #fff;
+}
+.setup-layout > section {
+  width: min(560px, calc(100% - 64px));
+  padding: 83px 0;
+  margin: auto;
+}
+.setup-layout h1 {
+  margin: 17px 0 20px;
+  color: #1d191b;
+  font:
+    700 52px/1.04 "Playfair Display",
+    serif;
+  letter-spacing: -0.05em;
+}
+.fields {
+  display: grid;
+  gap: 19px;
+}
+.fields label {
+  display: grid;
+  gap: 8px;
+  color: #373235;
+  font-size: 13px;
+  font-weight: 600;
+}
+.fields input {
+  height: 48px;
+  padding: 0 13px;
+  border: 1px solid #d8d2cd;
+  outline-color: #e75a40;
+}
+.setup-layout footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+}
+.done {
+  margin-top: 38px;
+  padding: 30px;
+  text-align: center;
+  background: #f0ebe5;
+}
+.done > b {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  margin: auto;
+  border-radius: 50%;
+  background: #6b966f;
+  color: #fff;
+}
+.done h2 {
+  margin: 16px 0 8px;
+  color: #211d1f;
+  font-size: 23px;
+}
+.done p {
+  color: #70696c;
+  font-size: 14px;
+}
+@media (max-width: 720px) {
+  .setup-layout {
+    display: block;
+  }
+  .setup-layout aside {
+    display: flex;
+    min-height: 0;
+    padding: 20px;
+    overflow: auto;
+    border-right: 0;
+    border-bottom: 1px solid #e4ded9;
+  }
+  .setup-layout aside div {
+    min-width: 42px;
+  }
+  .setup-layout aside strong {
+    display: none;
+  }
+  .setup-layout > section {
+    width: calc(100% - 40px);
+    padding: 52px 0;
+  }
+  .setup-layout h1 {
+    font-size: 43px;
+  }
+}

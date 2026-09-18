@@ -1,0 +1,33 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin: 58px 0 42px;
+  background: #ded9d4;
+}
+.info-card {
+  min-height: 235px;
+  padding: 27px;
+  background: #f4f1ed;
+}
+.info-card > span {
+  color: #e75a40;
+  font:
+    12px "DM Mono",
+    monospace;
+}
+.info-card h2 {
+  margin: 52px 0 8px;
+  color: #211d1f;
+  font-size: 23px;
+}
+.info-card p {
+  color: #696266;
+  font-size: 14px;
+  line-height: 1.55;
+}
+@media (max-width: 720px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
